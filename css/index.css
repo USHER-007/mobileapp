@@ -23,7 +23,7 @@ body{
     Meiryo,
     sans-serif;
     text-align: center;
-    background-image: url(../img/xxxxxxxx.JPG);
+    background-image: url(../img/background.jpg);
     background-size: cover;
     overflow: hidden;
 }
@@ -69,7 +69,7 @@ h2{
     padding-left: 0.5em;
     width: 80%;
     border-radius: 0.5em 1.5em;
-    background-color:rgba(245, 245, 245, 0.6);
+    /* background-color:rgba(245, 245, 245, 0.6); */
     box-shadow:0 0 0.5em rgb(73, 72, 72);
 }
 main > p {
