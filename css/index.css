@@ -152,15 +152,15 @@ footer> p {
     background: rgba(1, 24, 31, 0.7);
 }
 .fade-in{
-    animation: fadein 1.5s ease-in-out forwards;
+    animation: fadein 1.5s ease-out forwards;
 }
 @keyframes fadein{
     0% {
       opacity: 0;
-      transform: tranlateY(20px);
+      transform: translateY(20px);
     }
     100%{
-      opacity: 100%;
+      opacity: 1;
       transform: translateY(0px);
     }
   }
