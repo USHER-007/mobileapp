@@ -29,7 +29,7 @@ body{
 }
 
 header, footer, h1, h2, h3, p, div, .container01, .filler01 {
-    margin: 0.2em 0em 0em 0em;
+    margin: 1.5em 0em 0em 0em;
     padding: 0.1em;
 }
 
@@ -38,14 +38,15 @@ header, footer, h1, h2, h3, p, div, .container01, .filler01 {
 /*****************************/
 h1 {
     font: 2em Rajdhani, "Noto Sans JP";
-    color: rgb(181, 242, 252);
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    color: rgb(0 0 0);
+    background-image: radial-gradient(circle 248px at center, #c8b3b3 0%, #949494 47%, #969191 100%);
 }
 
 h2{
     padding-left: 0.5em;
-    border-left: solid 0.5em darkgray;
+    border-left: solid 0.5em rgb(0 0 0);
     text-align: left;
+    color: rgb(5 9 2);
 }
 
 /*****************************/
@@ -112,6 +113,7 @@ a:hover{
     margin: 0;
     line-height: 1em;
     overflow: hidden;
+    opacity: 0;
 }
 
 .item02{
@@ -121,6 +123,7 @@ a:hover{
     margin: 0;
     line-height: 1em;
     overflow: hidden;
+    opacity: 0;
 }
 
 .item01 img, .item02 img{
@@ -148,6 +151,19 @@ footer> p {
     text-align: center;
     background: rgba(1, 24, 31, 0.7);
 }
+.fade-in{
+    animation: fadein 1.5s ease-in-out forwards;
+}
+@keyframes fadein{
+    0% {
+      opacity: 0;
+      transform: tranlateY(20px);
+    }
+    100%{
+      opacity: 100%;
+      transform: translateY(0px);
+    }
+  }
 /*******************************************************/
 /* レスポンシブ対応　メディアクエリを使ってCSSを切り替える */
 /* https://www.design-memo.com/coding/css-media-queries */
